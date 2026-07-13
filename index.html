@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booktracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Booktracker</h1>
+    <div class="hinzufügen">
+        <input type="text" id="BookInput" placeholder="Beendetes Buch">
+        <input type="text" id="AuthorInput" placeholder="Autor">
+        
+        <select id="RatingInput">
+        <option value="⭐">⭐</option>
+        <option value="⭐⭐">⭐⭐</option>
+        <option value="⭐⭐⭐">⭐⭐⭐</option>
+        <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+    </select>
+        
+        <button id="addBookButton">Buch hinzufügen</button>
+    </div>
+    <h2>Jahresziel</h2>
+
+    <div class="progress-container">
+    <div id="progressBar"></div>
+    </div>
+        <p id="progressText">0 / 20 Bücher (0%)</p>
+
+    <div class="Liste">
+        <h2>Meine gelesenen Bücher</h2>
+        <ul id="bookList"></ul>
+    </div>  
+<script src="script.js"></script>
+</body>
